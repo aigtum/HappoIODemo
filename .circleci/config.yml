@@ -4,7 +4,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/node:jessie-browsers
+      - image: circleci/node:8
     steps:
       - checkout
       - run:
