@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+  happo: happo/happo@2.0.0
 jobs:
   build:
     docker:
