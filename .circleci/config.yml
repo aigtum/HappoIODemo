@@ -2,7 +2,9 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node
+      - image: circleci/node:jessie-browsers
     steps:
       - checkout
-      - run: echo "A first hello"
+      - run:
+          name: happo
+          command: npm run happo-ci-circleci
