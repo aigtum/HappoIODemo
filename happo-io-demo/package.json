@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
   },
   "scripts": {
     "start": "react-scripts start",
@@ -13,6 +13,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "happo": "happo"
+    "happo-ci-circleci": "happo-ci-circleci"
   },
   "eslintConfig": {
     "extends": "react-app"
