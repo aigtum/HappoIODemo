@@ -1,34 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import Button from './Button';
-
-
-var secret = process.env.REACT_APP_KEY;
+import Button from './components/myButton';
+import Header from './components/header.jsx';
+import Footer from './components/footer.jsx';
 
 class App extends Component {
   render() {
-    console.log(secret);
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          
-          <Button label="Click me!"/>
-        </header>
+        <Header/>
         <body>
+          <p>The following page is a demo for Happo.io, a screenshot based testing platform for user interfaces.</p>
+          <Button label="Click me!"/>
         </body>
+        <footer>
+          <Footer/>
+        </footer>
       </div>
     );
   }
