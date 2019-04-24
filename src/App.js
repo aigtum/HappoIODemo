@@ -10,10 +10,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <body>
           <p>The following page is a demo for Happo.io, a screenshot based testing platform for user interfaces.</p>
           <Button label="Click me!"/>
-        </body>
         <footer>
           <Footer/>
         </footer>

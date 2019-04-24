@@ -25,17 +25,3 @@
   text-align: center;
 }
 
-.primary {
-  margin: 2px;
-  border-radius: 4px;
-  background-color: #55A88F;
-  color: #FFFFFF;
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #282c34;
-}
-
-.primary:hover {
-  background-color: rgb(61, 119, 102);
-}
-
