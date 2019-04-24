@@ -15,8 +15,8 @@ class Button extends Component {
 }
   render() {
     const style = {
-      margin: '2px',
-      borderRadius: '4px',
+      margin: '3px',
+      borderRadius: '5px',
       backgroundColor: this.state.hovering ? '#346e5d' : '#55A88F',
       color: '#FFFFFF',
       padding: '10px',
