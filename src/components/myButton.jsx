@@ -21,18 +21,19 @@ var buttonStyle = {
   }
 };
 
+var buttonHovered = false;
+
 var alertTest = () => {
   alert("test!");
 }
 
 class Button extends Component {
-    buttonHovered = false;
     render() {
       return (
         <button
-          onMouseEnter={() => {this.buttonHovered = true; console.log(this.buttonHovered)}} 
-          onMouseLeave={() => this.buttonHovered = false}
-          style={this.buttonHovered ? buttonStyle.hovered : buttonStyle.default}
+          onMouseEnter={() => {buttonHovered = true}} 
+          onMouseLeave={() => buttonHovered = false}
+          style={buttonHovered ? buttonStyle.hovered : buttonStyle.default}
           onClick={alertTest}>{this.props.label}</button>
       );
     }
