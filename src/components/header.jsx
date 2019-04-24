@@ -21,7 +21,7 @@ const Header = (props) => {
 
   return (
     <header style={styles.header}>
-      <h1><img style={styles.img} src="/src/static/logo.png" alt="Happo.io logo"/>Happo.io Demo</h1>
+      <h1><img style={styles.img} src={require('../static/logo.png')} alt="Happo.io logo"/>Happo.io Demo</h1>
     </header>
   )
 };
