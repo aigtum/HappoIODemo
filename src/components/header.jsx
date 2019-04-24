@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../static/logo.png';
 
 const styles = {
   'header': {
@@ -22,7 +21,7 @@ const Header = (props) => {
 
   return (
     <header style={styles.header}>
-      <h1><img style={styles.img} src={logo} alt="Happo.io logo"/>Happo.io Demo</h1>
+      <h1><img style={styles.img} src="/src/static/logo.png" alt="Happo.io logo"/>Happo.io Demo</h1>
     </header>
   )
 };
