@@ -13,4 +13,4 @@ jobs:
       - run:
           name: happo
           #command: npm run happo-ci-circleci
-          command: happo/run_happo
+          command: npm run happo
