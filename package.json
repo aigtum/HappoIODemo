@@ -25,6 +25,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "file-loader": "^3.0.1",
     "happo.io": "^3.13.1"
   }
 }
