@@ -1,9 +1,12 @@
 import React from "react";
 import Button from "./myButton";
+import Header from "./header"
 
 export const primary = () => (
     <Button type="primary" label="Primary"/>
 );
-export const secondary = () => (
-    <Button type="secondary" label="Secondary"/>
+export const header = () => (
+    <Header/>
 );
+
+
