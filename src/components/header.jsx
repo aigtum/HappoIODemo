@@ -1,4 +1,5 @@
 import React from 'react';
+import {ReactComponent as Logo} from '../static/logo.svg';
 
 const styles = {
   'header': {
@@ -21,7 +22,7 @@ const Header = (props) => {
 
   return (
     <header style={styles.header}>
-      <h1><img style={styles.img} src={require('../static/logo.png')} alt="Happo.io logo"/>Happo.io Demo</h1>
+      <h1><Logo style={styles.img}/>Happo.io Demo</h1>
     </header>
   )
 };
