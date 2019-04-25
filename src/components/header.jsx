@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const styles = {
   'header': {
     backgroundColor: '#282c34',
@@ -21,7 +22,7 @@ const Header = (props) => {
 
   return (
     <header style={styles.header}>
-      <h1><img src={'/images/logo.png'} alt="logo" style={styles.img}/>Happo.io Demo</h1>
+      <h1><img src="/images/logo.png" alt="logo" style={styles.img}/>Happo.io Demo</h1>
     </header>
   )
 };
