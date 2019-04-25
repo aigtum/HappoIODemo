@@ -6,7 +6,7 @@ module.exports = {
   apiSecret: process.env.REACT_APP_SECRET,
 
   publicFolders: [
-    path.resolve(__dirname, 'src/public'),
+    path.resolve(__dirname, 'public'),
   ],
 
   targets: {
