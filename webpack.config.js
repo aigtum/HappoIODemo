@@ -12,7 +12,7 @@ module.exports = {
 			},
 			// Load images.
 			{
-				test: /\.(gif|jpe?g|png)$/,
+                test: /\.(ttf|png|svg|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
 				loader: 'url-loader?limit=25000',
 				query: {
 					limit: 10000,
