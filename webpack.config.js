@@ -1,3 +1,5 @@
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
     mode: 'development',
     module: {
@@ -10,5 +12,12 @@ module.exports = {
                 }
             }]
         }]
-    }
+    },
+    plugins: [
+        new CopyWebpackPlugin([{
+            from: '/src/images',
+            to: 'images'
+        }]),
+    ],
+
 }

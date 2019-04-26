@@ -1,4 +1,7 @@
-const { RemoteBrowserTarget } = require('happo.io');
+const {
+  RemoteBrowserTarget
+} = require('happo.io');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -6,7 +9,7 @@ module.exports = {
   apiSecret: process.env.REACT_APP_SECRET,
 
   publicFolders: [
-    path.resolve(__dirname, 'public'),
+    path.resolve(__dirname, 'images'),
   ],
 
   targets: {
@@ -14,6 +17,13 @@ module.exports = {
       viewport: '1024x768',
     }),
   },
+
+  plugins: [
+    new CopyWebpackPlugin([{
+      from: '/src/images',
+      to: 'images'
+    }]),
+  ],
 
   type: 'react',
 };
