@@ -1,6 +1,4 @@
-var CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
-
 
 const {
   RemoteBrowserTarget
@@ -9,23 +7,27 @@ const {
 module.exports = {
   apiKey: process.env.REACT_APP_KEY,
   apiSecret: process.env.REACT_APP_SECRET,
+  
+  type: 'react',
 
-  publicFolders: [
-    path.resolve(__dirname, 'src/images'),
-  ],
-
+  customizeWebpackConfig: (config) => {
+    config.module.rules.push({
+      test: /\.css$/,
+      use: [{ loader: cssLoader }],
+    });
+   // it's important that we return the modified config
+    return config;
+  },
+  
   targets: {
     chrome: new RemoteBrowserTarget('chrome', {
       viewport: '1024x768',
     }),
   },
 
-  plugins: [
-    new CopyWebpackPlugin([{
-      from: 'src/images',
-      to: 'images'
-    }]),
+  publicFolders: [
+    path.resolve(__dirname, 'src/images'),
   ],
-
-  type: 'react',
+  
+  
 };
