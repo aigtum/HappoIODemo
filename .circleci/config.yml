@@ -12,4 +12,4 @@ jobs:
           command: npm install
       - run:
           name: happo
-          command: INSTALL_CMD='npm install url-loader --save-dev' npm run happo-ci-circleci
+          command: npm run happo-ci-circleci

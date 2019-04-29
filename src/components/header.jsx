@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../images/logo.svg'
 
 const styles = {
   'header': {
@@ -21,8 +20,7 @@ const styles = {
 const Header = (props) => {
   return (
     <header style={styles.header}>
-      <img src={logo}/>
-      <h1><img src="/logo.svg"/>Happo.io Demo</h1>
+      <h1><img src="https://camo.githubusercontent.com/192f268f4e37ae06a0648e3e99a4923be7f45124/68747470733a2f2f686170706f2e696f2f7374617469632f686170706f2d686970706f2e706e67"/>Happo.io Demo</h1>
     </header>
   )
 };
