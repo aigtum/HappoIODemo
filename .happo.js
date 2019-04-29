@@ -9,15 +9,6 @@ module.exports = {
   apiSecret: process.env.REACT_APP_SECRET,
   
   type: 'react',
-
-  customizeWebpackConfig: (config) => {
-    config.module.rules.push({
-      test: /\.css$/,
-      use: [{ loader: cssLoader }],
-    });
-   // it's important that we return the modified config
-    return config;
-  },
   
   targets: {
     chrome: new RemoteBrowserTarget('chrome', {
@@ -28,6 +19,5 @@ module.exports = {
   publicFolders: [
     path.resolve(__dirname, 'src/images'),
   ],
-  
   
 };
