@@ -1,8 +1,10 @@
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path');
+
+
 const {
   RemoteBrowserTarget
 } = require('happo.io');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-const path = require('path');
 
 module.exports = {
   apiKey: process.env.REACT_APP_KEY,
