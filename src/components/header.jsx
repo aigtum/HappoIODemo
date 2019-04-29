@@ -13,16 +13,17 @@ const styles = {
     color: 'white',
   },
   'img': {
-    paddingRight: '25px',
-    width: 'calc(24px + 2vmin)',
+    paddingRight: '25px'
   }
 }
 
 const Header = (props) => {
   return (
     <header style={styles.header}>
-      <h1><img style={styles.img} src="https://camo.githubusercontent.com/192f268f4e37ae06a0648e3e99a4923be7f45124/68747470733a2f2f686170706f2e696f2f7374617469632f686170706f2d686970706f2e706e67" alt="happo-logo"/>
-      Happo.io Demo</h1>
+      <h1>
+        <img style={styles.img} height={50} mode='fit' src="https://camo.githubusercontent.com/192f268f4e37ae06a0648e3e99a4923be7f45124/68747470733a2f2f686170706f2e696f2f7374617469632f686170706f2d686970706f2e706e67" alt="happo-logo"/>
+        Happo.io Demo
+      </h1>
     </header>
   )
 };
