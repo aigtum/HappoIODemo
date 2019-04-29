@@ -22,7 +22,7 @@ const Header = (props) => {
   return (
     <header style={styles.header}>
 
-      <h1><img src={Logo}/>Happo.io Demo</h1>
+      <h1><img src="/logo.svg"/>Happo.io Demo</h1>
     </header>
   )
 };
