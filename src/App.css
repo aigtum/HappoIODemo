@@ -2,18 +2,6 @@
   text-align: center;
 }
 
-.header {
-  background-color: #282c34;
-  display: inline-flex;
-  width: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .footer {
   position: fixed;
   padding: 1em;

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import Button from './components/myButton';
 import Header from './components/header.jsx';
+import Button from './components/myButton';
 import Footer from './components/footer.jsx';
 
 class App extends Component {
