@@ -12,4 +12,4 @@ jobs:
           command: npm install
       - run:
           name: happo
-          command: npm run happo-ci-circleci
+          command: VERBOSE=true npm run happo-ci-circleci

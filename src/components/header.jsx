@@ -1,7 +1,5 @@
 import React from 'react';
 
-let logo = require('../images/logo.png')
-
 const styles = {
   'header': {
     backgroundColor: '#282c34',
