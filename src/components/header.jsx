@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../images/logo.png'
+
+let logo = require('../images/logo.png')
 
 const styles = {
   'header': {
@@ -10,7 +11,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: 'calc(10px + 2vmin)',
+    fontSize: 'calc(5px + 2vmin)',
     color: 'white'
   },
   'img': {
@@ -19,10 +20,9 @@ const styles = {
 }
 
 const Header = (props) => {
-
   return (
     <header style={styles.header}>
-      <h1><img src={logo} alt="logo" style={styles.img}/>Happo.io Demo</h1>
+      <h1><img src="/logo.png" alt="logo" style={styles.img}/>Happo.io Demo</h1>
     </header>
   )
 };

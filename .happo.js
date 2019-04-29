@@ -9,7 +9,7 @@ module.exports = {
   apiSecret: process.env.REACT_APP_SECRET,
 
   publicFolders: [
-    path.resolve(__dirname, 'images'),
+    path.resolve(__dirname, 'src/images'),
   ],
 
   targets: {
@@ -20,7 +20,7 @@ module.exports = {
 
   plugins: [
     new CopyWebpackPlugin([{
-      from: '/src/images',
+      from: 'src/images',
       to: 'images'
     }]),
   ],
