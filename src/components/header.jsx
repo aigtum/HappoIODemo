@@ -9,7 +9,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: 'calc(5px + 2vmin)',
+    fontSize: 'calc(9px + 2vmin)',
     color: 'white',
   },
   'img': {
