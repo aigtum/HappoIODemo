@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Header from './components/header.jsx';
-import Button from './components/myButton';
 import Footer from './components/footer.jsx';
+import SimpleExpansionPanel from './components/expansion-panel';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header/>
-          <p>The following page is a demo for Happo.io, a screenshot based testing platform for user interfaces.</p>
-          <Button label="Click me!"/>
+        <SimpleExpansionPanel/>
         <footer>
           <Footer/>
         </footer>
