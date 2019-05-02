@@ -5,7 +5,6 @@ const styles = {
     backgroundColor: '#282c34',
     display: 'inline-flex',
     width: '100%',
-    fontFamily: "Verdana, sans-serif",
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
