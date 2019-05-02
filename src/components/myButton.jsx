@@ -31,7 +31,9 @@ class Button extends Component {
         style={style}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        onClick={alertTest}>{this.props.label}</button>
+        onClick={alertTest}>
+          {this.props.label}
+        </button>
     );
   }
 }

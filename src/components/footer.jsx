@@ -3,6 +3,7 @@ import React from 'react';
 const styles = {
     'footer': {
         position: 'fixed',
+        fontFamily: 'Arial',
         padding: '1em',
         left: '0',
         bottom: '0',

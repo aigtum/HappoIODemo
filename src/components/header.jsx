@@ -4,6 +4,7 @@ const styles = {
   'header': {
     backgroundColor: '#282c34',
     display: 'inline-flex',
+    fontFamily: 'Arial',
     width: '100%',
     flexDirection: 'column',
     alignItems: 'center',
