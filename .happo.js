@@ -19,5 +19,13 @@ module.exports = {
   publicFolders: [
     path.resolve(__dirname, 'src/images'),
   ],
+  customizeWebpackConfig: (config) => {
+    config.module.rules.push({
+      test: /\.css$/,
+      use: [{ loader: css-loader }],
+    });
+   // it's important that we return the modified config
+    return config;
+  },
   
 };
