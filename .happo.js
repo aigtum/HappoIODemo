@@ -22,7 +22,7 @@ module.exports = {
   customizeWebpackConfig: (config) => {
     config.module.rules.push({
       test: /\.css$/,
-      use: [{ loader: css-loader }],
+      use: [{ loader: 'css-loader' }],
     });
    // it's important that we return the modified config
     return config;
