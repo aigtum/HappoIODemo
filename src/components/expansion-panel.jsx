@@ -5,7 +5,6 @@ import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Button from './myButton';
 
 const styles = theme => ({
@@ -23,7 +22,7 @@ function SimpleExpansionPanel(props) {
   return (
     <div className={classes.root}>
       <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+        <ExpansionPanelSummary>
           <Typography className={classes.heading}>Pipeline</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
@@ -34,7 +33,7 @@ function SimpleExpansionPanel(props) {
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel>
-        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+        <ExpansionPanelSummary>
           <Typography className={classes.heading}>About Happo.io</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
