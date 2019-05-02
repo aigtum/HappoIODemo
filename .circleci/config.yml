@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   happo: happo/happo@2.0.0
 jobs:
-  build:
+  happo:
     docker:
       - image: circleci/node:8
     steps:
@@ -13,7 +13,7 @@ jobs:
       - run:
           name: happo
           command: npm run happo-ci-circleci
-  build:
+  deploy:
     docker:
       - image: eu.gcr.io/fuzzingcoreutils/ci-cd:0.1.0
     working_directory: ~/workspace
