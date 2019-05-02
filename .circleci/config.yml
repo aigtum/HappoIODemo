@@ -13,3 +13,55 @@ jobs:
       - run:
           name: happo
           command: npm run happo-ci-circleci
+  build:
+    docker:
+      - image: eu.gcr.io/fuzzingcoreutils/ci-cd:0.1.0
+    working_directory: ~/workspace
+    environment:
+      DEPLOYMENT_NAME: ci-cd
+      PROJECT_ID: fuzzingcoreutils
+      CLUSTER_NAME: ci-cd
+      CLUSTER_NAME_STAG: ci-cd-stag
+      CLOUDSDK_COMPUTE_ZONE: eu-north1-c 
+      CONTAINER_NAME: ci-cd
+      IMAGE: ci-cd
+      REG_ID: ci-cd
+      REG_ID_PROD: ci-cd-prod
+      IMG_TAG: 0.1.0
+      PROJECT_NAME: ci-cd
+      DEPLOYMENT_ENVIRONMENT: staging
+    steps:
+      - checkout
+      - setup_remote_docker
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+      - run:
+          name: Install node packages
+          command: |
+            npm install
+      
+      - run:
+          name: Start app
+          command: |
+            npm start &
+      - run:
+          name: Run tests
+          command: |
+            npm test
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      
+      - run:
+          name: Build and Deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ./deployment.sh
+            fi  
