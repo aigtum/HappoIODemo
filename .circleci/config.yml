@@ -16,6 +16,9 @@ jobs:
   build:
     docker:
       - image: eu.gcr.io/fuzzingcoreutils/ci-cd:0.1.0
+        auth:
+          username: circleci
+          password: $ACCOUNT_KEY_STAGING
     working_directory: ~/workspace
     environment:
       DEPLOYMENT_NAME: ci-cd
