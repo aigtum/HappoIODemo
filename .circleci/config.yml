@@ -2,14 +2,11 @@ version: 2.1
 orbs:
   happo: happo/happo@2.0.0
 jobs:
-  happo:
+  test:
     docker:
       - image: circleci/node:8
     steps:
       - checkout
-      - run:
-          name: npminstall
-          command: npm install
       - run:
           name: happo
           command: npm run happo-ci-circleci
@@ -65,3 +62,9 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               ./deployment.sh
             fi  
+workflows:
+  version: 2.1
+  build_and_test:
+    jobs:
+      - test
+      - build
