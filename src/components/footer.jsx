@@ -2,7 +2,7 @@ import React from 'react';
 
 const styles = {
     'footer': {
-        position: 'static',
+        position: 'inherit',
         clear: 'both',
         fontFamily: 'Arial',
         padding: '10px',
@@ -12,7 +12,6 @@ const styles = {
         backgroundColor: '#282c34',
         color: 'white',
         textAlign: 'center',
-        marginBlockEnd: '-100px',
     }
 }
 

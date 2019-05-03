@@ -8,6 +8,7 @@
     "@material-ui/styles": "^3.0.0-alpha.10",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-embed-gist": "^1.0.7",
     "react-scripts": "2.1.8",
     "ts-pnp": "^1.0.1",
     "typescript": "^3.4.5"
