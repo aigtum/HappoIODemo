@@ -1,5 +1,4 @@
 import React from 'react';
-import PipelineSVG from '../images/pipeline.png';
 
 const styles = {
   fontFamily: 'Noto Serif',
@@ -9,7 +8,7 @@ const styles = {
 const Pipeline = (props) => {
   return (
       <div style={styles}>
-          <img mode='fit' src={PipelineSVG} alt="pipeline"/>
+          <img mode='fit' src="https://i.imgur.com/4A5Nh8Z.png" alt="pipeline"/>
       </div>
   )
 };
