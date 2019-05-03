@@ -1,22 +1,19 @@
 import React from 'react';
 import Pipeline from './pipeline';
-import MyImage from '../images/img.jpg';
 
 
 const styles = {
     'main': {
-        backgroundImage: `url(${MyImage})`,
         textAlign: 'center',
         fontFamily: 'Arial',
         //backgroundImage: "url('')",
         //backgroundColor: 'white',
         height: '1500px', 
         padding: '1px',
-        
+        backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundPepeat: 'no-repeat',
         backgroundSize: 'cover',
-        color: 'white',
     }
 }
 
