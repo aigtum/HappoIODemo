@@ -32,7 +32,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: eu.gcr.io/fuzzingcoreutils/ci-cd:0.1.0
+      - image: eu.gcr.io/fuzzingcoreutils/ci-cd:0.1.2
         name: ci-cd
         ports:
         - containerPort: 3000
