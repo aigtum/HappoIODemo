@@ -16,14 +16,20 @@ module.exports = {
     }),
   },
 
+
+  stylesheets: [
+    'https://fonts.googleapis.com/css?family=Concert+One|Noto+Serif'
+  ],
   publicFolders: [
     path.resolve(__dirname, 'src/images'),
   ],
+
   customizeWebpackConfig: (config) => {
     config.module.rules.push(
-      { test: /\.(png|jpg|svg)$/, loader: 'url-loader?limit=10192' },
-      {
-      test: /\.css$/, use: [{ loader: 'css-loader' }],
+      { test: /\.(png|jpg|svg)$/, loader: 'file-loader' },
+      { test: /\.(png|jpg|svg)$/, loader: 'url-loader?limit=8192' },
+      {test: /\.css$/, use: [{ loader: 'css-loader' }
+    ],
     });
    // it's important that we return the modified config
     return config;
