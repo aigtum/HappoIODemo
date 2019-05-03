@@ -16,7 +16,7 @@ const styles = {
         backgroundPosition: 'center',
         backgroundPepeat: 'no-repeat',
         backgroundSize: 'cover',
-        color: 'white',
+        color: 'black',
     }
 }
 
