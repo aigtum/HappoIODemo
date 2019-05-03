@@ -21,7 +21,7 @@ module.exports = {
   ],
   customizeWebpackConfig: (config) => {
     config.module.rules.push(
-      { test: /\.(png|jpg|svg)$/, loader: 'url-loader?limit=8192' },
+      { test: /\.(png|jpg|svg)$/, loader: 'url-loader?limit=10192' },
       {
       test: /\.css$/, use: [{ loader: 'css-loader' }],
     });
