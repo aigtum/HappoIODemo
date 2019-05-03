@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/header.jsx';
 import Footer from './components/footer.jsx';
 import SimpleExpansionPanel from './components/expansion-panel';
+import Pipeline from './components/pipeline';
 
 const styles = {
   'app': {
@@ -18,7 +19,9 @@ class App extends Component {
           <header>
             <Header/>
           </header>
-          <SimpleExpansionPanel/>
+          
+          <Pipeline/>
+          
           <footer>
             <Footer/>
           </footer>

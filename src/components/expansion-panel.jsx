@@ -5,7 +5,7 @@ import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
-import Button from './myButton';
+import Pipeline from './pipeline';
 
 const styles = theme => ({
   root: {
@@ -27,8 +27,7 @@ function SimpleExpansionPanel(props) {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            <Button label="Click me!"/>
-            The following page is a demo for Happo.io, a screenshot based testing platform for user interfaces.
+            <Pipeline/>
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>

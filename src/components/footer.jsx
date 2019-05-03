@@ -3,8 +3,8 @@ import React from 'react';
 const styles = {
     'footer': {
         position: 'fixed',
+        clear: 'both',
         fontFamily: 'Arial',
-        padding: '1em',
         left: '0',
         bottom: '0',
         width: '100%',
