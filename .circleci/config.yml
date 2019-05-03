@@ -8,6 +8,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: npminstall
+          command: npm install
+      - run:
           name: happo
           command: npm run happo-ci-circleci
   build:
