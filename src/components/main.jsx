@@ -1,11 +1,9 @@
 import React from 'react';
 import Pipeline from './pipeline';
-import MyImage from '../images/img.jpg';
 import Readme from './readme';
 
 const styles = {
     'main': {
-        backgroundImage: `url(${MyImage})`,
         textAlign: 'center',
         fontFamily: 'Arial',
         //backgroundImage: "url('')",
