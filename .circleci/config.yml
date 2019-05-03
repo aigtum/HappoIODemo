@@ -22,7 +22,7 @@ jobs:
       PROJECT_ID: fuzzingcoreutils
       CLUSTER_NAME: ci-cd
       CLUSTER_NAME_STAG: ci-cd-stag
-      CLOUDSDK_COMPUTE_ZONE: eu-north1-c 
+      CLOUDSDK_COMPUTE_ZONE: europe-north1-c 
       CONTAINER_NAME: ci-cd
       IMAGE: ci-cd
       REG_ID: ci-cd
