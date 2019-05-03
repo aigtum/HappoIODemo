@@ -15,7 +15,7 @@ jobs:
           command: npm run happo-ci-circleci
   build:
     docker:
-      - image: eu.gcr.io/fuzzingcoreutils/ci-cd:0.1.0
+      - image: eu.gcr.io/fuzzingcoreutils/ci-cd:0.1.1
     working_directory: ~/workspace
     environment:
       DEPLOYMENT_NAME: ci-cd
