@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./myButton";
 import Header from "./header";
 import Footer from "./footer";
-import SimpleExpansionPanel from "./expansion-panel";
+import MainComponent from "./main";
 
 
 export const primary = () => (
@@ -15,5 +15,5 @@ export const footer = () => (
     <Footer/>
 );
 export const expansionPanel = () => (
-    <SimpleExpansionPanel/>
+    <MainComponent/>
 )

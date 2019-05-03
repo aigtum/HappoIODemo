@@ -2,15 +2,17 @@ import React from 'react';
 
 const styles = {
     'footer': {
-        position: 'fixed',
+        position: 'static',
         clear: 'both',
         fontFamily: 'Arial',
+        padding: '10px',
         left: '0',
         bottom: '0',
         width: '100%',
         backgroundColor: '#282c34',
         color: 'white',
         textAlign: 'center',
+        marginBlockEnd: '-100px',
     }
 }
 
