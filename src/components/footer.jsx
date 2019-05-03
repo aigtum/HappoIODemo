@@ -4,7 +4,7 @@ const styles = {
     'footer': {
         position: 'inherit',
         clear: 'both',
-        fontFamily: 'Arial',
+        fontFamily: 'Concert One',
         padding: '10px',
         left: '0',
         bottom: '0',

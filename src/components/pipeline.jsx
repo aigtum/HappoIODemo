@@ -1,16 +1,14 @@
 import React from 'react';
 
 const styles = {
-  'pipelineImg': {
-    paddingRight: '25px'
-  }
+	fontFamily: 'Noto Serif',
 }
 
 const Pipeline = (props) => {
   return (
-      <div>
+      <div style={styles}>
           <h1>Pipeline of something</h1>
-          <img style={styles.pipelineImg} mode='fit' src="https://docs.gitlab.com/ee/ci/img/pipelines_mini_graph_sorting.png" alt="pipeline"/>
+          <img mode='fit' src="https://docs.gitlab.com/ee/ci/img/pipelines_mini_graph_sorting.png" alt="pipeline"/>
       </div>
   )
 };

@@ -5,7 +5,7 @@ const styles = {
   'header': {
     backgroundColor: '#282c34',
     display: 'inline-flex',
-    fontFamily: 'Arial',
+    fontFamily: 'Concert One',
     width: '100%',
     flexDirection: 'column',
     alignItems: 'center',
