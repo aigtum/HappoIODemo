@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/header.jsx';
 import Footer from './components/footer.jsx';
-import SimpleExpansionPanel from './components/expansion-panel';
+import MainCompoment from './components/main';
 
 const styles = {
   'app': {
@@ -15,13 +15,11 @@ class App extends Component {
   render() {
     return (
         <div style={styles.app}>
-          <header>
-            <Header/>
-          </header>
-          <SimpleExpansionPanel/>
-          <footer>
-            <Footer/>
-          </footer>
+          <Header/>
+          
+          <MainCompoment/>
+          
+          <Footer/>
         </div>
     );
   }
