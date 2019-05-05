@@ -48,11 +48,11 @@ const Readme = (props) => {
 		than the testing framework, but in our experience following Circle-CI 
 		guide to deploy to Google Cloud was harder and less streamlined than 
 		adding the Happo testing to the pipeline.</p>
-		<p>To deploy to Kubernetes Circle CI spins up a docker image as it 
-		does for all tasks. Inside the docker image it will create <i>our</i>
-		deployment image, upload it to Google Cloud Registry and then use the 
-		fresh image from GCR to deploy a new Kubernetes Node, replacing the 
-		previous version. </p>
+		<p>To deploy to Kubernetes Circle CI spins up a docker image, as it 
+		does for all tasks. Inside the docker image it will <i>create a new
+		deployment image</i>, upload it to Google Cloud Registry and then use 
+		the fresh image from GCR to deploy a new Kubernetes Node, replacing 
+		the previous version. </p>
 		<hr width='80%' style={styles.hr} />
 		<h2>Config.yml</h2>
 		<p>The CI-pipeline of Circle-CI is completely configured by the file 

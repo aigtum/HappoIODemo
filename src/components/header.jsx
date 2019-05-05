@@ -24,9 +24,9 @@ const Header = (props) => {
   return (
     <header style={styles.header}>
       <h1 style={styles.h1}>
-        Visual Regression Testing
+        Visual Regression Testing and Deploying Node.js
       </h1>
-      <h4 style={styles.h1}>With CircleCI and Happo.io</h4>
+      <h4 style={styles.h1}>With CircleCI, Happo.io and Kubernetes</h4>
     </header>
   )
 };
