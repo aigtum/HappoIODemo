@@ -7,7 +7,7 @@ const styles = {
         textAlign: 'center',
         fontFamily: 'Arial',
         //backgroundImage: "url('')",
-        //backgroundColor: 'white',
+        backgroundColor: 'blue',
         width: '70%', 
         padding: '1px',
         margin: 'auto',  
@@ -15,6 +15,7 @@ const styles = {
         backgroundPepeat: 'no-repeat',
         backgroundSize: 'cover',
         color: 'black',
+        boxShadow: '0px 0px 0px 2px white inset'
     }
 }
 
