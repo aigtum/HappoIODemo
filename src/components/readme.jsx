@@ -7,7 +7,7 @@ const styles = {
   margin: '0px',
   padding: '20px',
   fontFamily: 'Noto Serif',
-  border: '0px black solid',
+  //border: '3px black solid',
   webkitBoxShadow: '3px 4px 20px -13px rgba(0,0,0,0.75)',
   mozBoxShadow: '3px 4px 20px -13px rgba(0,0,0,0.75)',
   boxShadow: '3px 4px 20px -13px rgba(0,0,0,0.75)',
@@ -29,12 +29,15 @@ const Readme = (props) => {
 		type of testing, for example Resemble.js or Phantom.css. 
 		The problem with these types of frameworks is that they are not
 		 ready to be added to a developement pipeline, defining the
-		  deployment of them would be up to the developer.</p>
+		  deployment of them would be up to the developer. And making them
+		  capable of cross-browser testing may prove difficult, especially
+		  if Microsoft Edge needs to be covered.</p>
 		<p>Other services ready to be added to a CI-pipeline include
 		 crossbrowsertesting.com, axcept.io who allows for a similar kind 
-		 of visual regression testing of webb-apps.
+		 of visual regression testing of webb-apps with cross-browser 
+		 capabilities.
 		What differentiates happo from its competitors is that it does the
-		 regression testing on a component level. Happo supports rendering
+		 regression testing on a <i>component level</i>. Happo supports rendering
 		 in multiple different browsers, including iOS safari and Microsoft
 		 Edge</p>
 		<hr width='80%' style={styles.hr} />
@@ -48,7 +51,8 @@ const Readme = (props) => {
 		<p>To deploy to Kubernetes Circle CI spins up a docker image as it 
 		does for all tasks. Inside the docker image it will create <i>our</i>
 		deployment image, upload it to Google Cloud Registry and then use the 
-		fresh image from GCR to deploy a new Kubernetes Node. </p>
+		fresh image from GCR to deploy a new Kubernetes Node, replacing the 
+		previous version. </p>
 		<hr width='80%' style={styles.hr} />
 		<h2>Config.yml</h2>
 		<p>The CI-pipeline of Circle-CI is completely configured by the file 
