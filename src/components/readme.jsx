@@ -3,7 +3,7 @@ import ReactEmbedGist from 'react-embed-gist';
 
 const styles = {
   textAlign: 'left',
-  //backgroundColor: 'white',
+  backgroundColor: 'white',
   margin: '0px',
   padding: '20px',
   fontFamily: 'Noto Serif',
