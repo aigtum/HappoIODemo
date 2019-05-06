@@ -6,6 +6,7 @@ const styles = {
     display: 'inline-flex',
     fontFamily: 'Concert One',
     width: '100%',
+    textAlign: 'center',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
