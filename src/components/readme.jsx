@@ -4,7 +4,6 @@ import Fade from 'react-reveal/Fade';
 
 const styles = {
   textAlign: 'left',
-  backgroundColor: 'teal',
   margin: '0px',
   padding: '20px',
   fontFamily: 'Noto Serif',
