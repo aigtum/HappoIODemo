@@ -86,7 +86,7 @@ class Readme extends React.Component {
 						Magic!
 					</Fade>
 				</div>
-				<hr width='80%' style={styles.hr} />
+				<hr width='40%' style={styles.hr} />
 				<h2>Deploying to Kubernetes</h2>
 				<p>Our pipeline in this Demo is not just testing but also deploying 
 				the master branch to a live kubernetes cluster. One might think that 
