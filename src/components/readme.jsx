@@ -60,7 +60,7 @@ class Readme extends React.Component {
 
 		return (	
 			<div style={styles}>
-				<h2>Screenshot based Regression Testing of GUI's</h2>
+				<h2>Screenshot based Regression Testing of GUI's - نمابش</h2>
 				<p>Testing the appearance of UI is hard. Re-defining an oracle every 
 				time the UI changes would add too much overhead to almost any 
 				webb-applications developement pipeline. Happo is one of many tools 
@@ -86,7 +86,8 @@ class Readme extends React.Component {
 						Magic!
 					</Fade>
 				</div>
-				<hr width='40%' style={styles.hr} />
+				
+				<hr width='80%' style={styles.hr} />
 				<h2>Deploying to Kubernetes</h2>
 				<p>Our pipeline in this Demo is not just testing but also deploying 
 				the master branch to a live kubernetes cluster. One might think that 
@@ -111,12 +112,13 @@ class Readme extends React.Component {
 						More Magic!
 					</Fade>
 				</div>
+				<ReactEmbedGist gist="adamhass/217ae0c819a892fba625d4b6d346a215" />
 				<div style={styles.evenMoreMagic}>
 					<Fade right when={this.state.show3} onReveal={this.hideElement3}>
 						Magic with a kick!
 					</Fade>
 				</div>
-				<ReactEmbedGist gist="adamhass/217ae0c819a892fba625d4b6d346a215" />
+				<hr width='400px' style={styles.hr} />
 			</div>
 		)
 	}
