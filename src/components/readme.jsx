@@ -86,6 +86,7 @@ class Readme extends React.Component {
 						Magic!
 					</Fade>
 				</div>
+				
 				<hr width='80%' style={styles.hr} />
 				<h2>Deploying to Kubernetes</h2>
 				<p>Our pipeline in this Demo is not just testing but also deploying 
@@ -117,6 +118,7 @@ class Readme extends React.Component {
 						Magic with a kick!
 					</Fade>
 				</div>
+				<hr width='400px' style={styles.hr} />
 			</div>
 		)
 	}
