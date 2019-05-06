@@ -60,7 +60,7 @@ class Readme extends React.Component {
 
 		return (	
 			<div style={styles}>
-				<h2>Screen-shot based Regression Testing of GUI's</h2>
+				<h2>Screenshot based Regression Testing of GUI's</h2>
 				<p>Testing the appearance of UI is hard. Re-defining an oracle every 
 				time the UI changes would add too much overhead to almost any 
 				webb-applications developement pipeline. Happo is one of many tools 
