@@ -118,7 +118,7 @@ class Readme extends React.Component {
 						Magic with a kick!
 					</Fade>
 				</div>
-				<hr width='400px' style={styles.hr} />
+				<hr width='401px' style={styles.hr} />
 			</div>
 		)
 	}
