@@ -6,7 +6,6 @@ const styles = {
     'main': {
         textAlign: 'center',
         fontFamily: 'Arial',
-        //backgroundImage: "url('')",
         backgroundColor: 'blue',
         width: '70%', 
         padding: '1px',

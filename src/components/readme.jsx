@@ -4,11 +4,9 @@ import Fade from 'react-reveal/Fade';
 
 const styles = {
   textAlign: 'left',
-  backgroundColor: 'teal',
   margin: '0px',
   padding: '20px',
   fontFamily: 'Noto Serif',
-  //border: '3px black solid',
   webkitBoxShadow: '3px 4px 20px -13px rgba(0,0,0,0.75)',
   mozBoxShadow: '3px 4px 20px -13px rgba(0,0,0,0.75)',
   boxShadow: '3px 4px 20px -13px rgba(0,0,0,0.75)',
